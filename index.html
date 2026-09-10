@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f4">
+  <meta name="description" content="Демонстрационная витрина мужской одежды Alma Tessuti из натуральных тканей.">
+  <title>Alma Tessuti | Демонстрационная витрина</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="demo-bar">Демонстрационная версия</div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Alma Tessuti, на главную">ALMA TESSUTI</a>
+    <nav class="desktop-nav" aria-label="Основная навигация">
+      <button class="nav-link catalog-trigger" type="button" aria-expanded="false" aria-controls="catalog-menu">
+        Каталог <span aria-hidden="true">⌄</span>
+      </button>
+      <button class="nav-link" type="button" data-family="Весна/лето">Весна / лето</button>
+      <button class="nav-link" type="button" data-family="Осень/зима">Осень / зима</button>
+      <a class="nav-link" href="#story">О проекте</a>
+    </nav>
+    <div class="header-actions">
+      <button class="text-action" id="search-open" type="button">Поиск</button>
+      <button class="text-action" id="cart-open" type="button">
+        Корзина <span class="count" id="cart-count">0</span>
+      </button>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">☰</button>
+    </div>
+
+    <div class="catalog-menu" id="catalog-menu" hidden>
+      <div class="catalog-menu-inner">
+        <div class="menu-intro">
+          <p class="eyebrow">Коллекции</p>
+          <h2>Гардероб вне одного сезона</h2>
+          <p>Натуральные ткани, спокойная палитра и вещи, которые легко сочетать между собой.</p>
+        </div>
+        <div class="menu-column">
+          <h3>Одежда</h3>
+          <button type="button" data-category="Верхняя одежда">Верхняя одежда</button>
+          <button type="button" data-category="Пиджаки и костюмы">Пиджаки и костюмы</button>
+          <button type="button" data-category="Сорочки">Сорочки</button>
+          <button type="button" data-category="Брюки">Брюки</button>
+          <button type="button" data-category="Трикотаж">Трикотаж и поло</button>
+        </div>
+        <div class="menu-column">
+          <h3>Завершить образ</h3>
+          <button type="button" data-category="Обувь">Обувь</button>
+          <button type="button" data-category="Сумки">Сумки</button>
+          <button type="button" data-category="Аксессуары">Аксессуары</button>
+          <button type="button" data-category="Все">Смотреть все</button>
+        </div>
+        <figure class="menu-image">
+          <img src="assets/images/933-1.webp" alt="Кожаные лоферы Alma Tessuti">
+        </figure>
+      </div>
+    </div>
+
+    <div class="mobile-nav" id="mobile-nav" hidden>
+      <button type="button" id="mobile-search-open">Поиск</button>
+      <button type="button" data-category="Все">Весь каталог</button>
+      <button type="button" data-family="Весна/лето">Весна / лето</button>
+      <button type="button" data-family="Осень/зима">Осень / зима</button>
+      <button type="button" data-category="Верхняя одежда">Верхняя одежда</button>
+      <button type="button" data-category="Пиджаки и костюмы">Пиджаки и костюмы</button>
+      <button type="button" data-category="Сорочки">Сорочки</button>
+      <button type="button" data-category="Брюки">Брюки</button>
+      <button type="button" data-category="Трикотаж">Трикотаж и поло</button>
+      <button type="button" data-category="Обувь">Обувь</button>
+      <button type="button" data-category="Сумки">Сумки</button>
+      <button type="button" data-category="Аксессуары">Аксессуары</button>
+      <a href="#story">О проекте</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <img src="assets/images/856-1.webp" alt="Льняная сорочка Alma Tessuti">
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Натуральные ткани. Современная классика.</p>
+        <h1 id="hero-title">ALMA TESSUTI</h1>
+        <p class="hero-copy">Мужской гардероб, в котором материал говорит тише логотипа, но остаётся главным.</p>
+        <div class="hero-actions">
+          <a class="button button-light" href="#catalog">Смотреть коллекцию</a>
+          <a class="button button-ghost" href="#story">Наша история</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="category-strip" aria-label="Быстрый выбор категории">
+      <button type="button" data-category="Верхняя одежда">Верхняя одежда</button>
+      <button type="button" data-category="Пиджаки и костюмы">Пиджаки и костюмы</button>
+      <button type="button" data-category="Сорочки">Сорочки</button>
+      <button type="button" data-category="Брюки">Брюки</button>
+      <button type="button" data-category="Трикотаж">Трикотаж</button>
+      <button type="button" data-category="Обувь">Обувь</button>
+      <button type="button" data-category="Сумки">Сумки</button>
+      <button type="button" data-category="Аксессуары">Аксессуары</button>
+    </section>
+
+    <section class="catalog-section" id="catalog" aria-labelledby="catalog-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Избранная подборка</p>
+          <h2 id="catalog-title">Коллекция</h2>
+        </div>
+        <p class="result-count" id="result-count" aria-live="polite"></p>
+      </div>
+
+      <div class="catalog-tools">
+        <div class="filter-scroll" id="category-filters" aria-label="Фильтр по категории"></div>
+        <label class="sort-control">
+          <span>Сортировка</span>
+          <select id="sort-select">
+            <option value="featured">По умолчанию</option>
+            <option value="price-asc">Сначала дешевле</option>
+            <option value="price-desc">Сначала дороже</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      <div class="empty-state" id="empty-state" hidden>
+        <h3>Ничего не найдено</h3>
+        <p>Попробуйте изменить запрос или выбрать другую категорию.</p>
+        <button class="button button-dark" id="reset-filters" type="button">Показать всё</button>
+      </div>
+    </section>
+
+    <section class="story-section" id="story" aria-labelledby="story-title">
+      <div class="story-media">
+        <img src="assets/images/934-1.webp" alt="Льняные брюки Alma Tessuti">
+        <img src="assets/images/927-1.webp" alt="Кожаная дорожная сумка Alma Tessuti">
+      </div>
+      <div class="story-copy">
+        <p class="eyebrow">Alma Tessuti, с 2024 года</p>
+        <h2 id="story-title">Не про моду.<br>Про вещи, которые остаются.</h2>
+        <p>Проект появился как ответ на запрос мужчины, который ценит качество, осознанность и вневременную элегантность. Мы собираем коллекции из французского льна, длинноволокнистого хлопка, австралийской шерсти, кашемира, шёлка и рами.</p>
+        <p>Современные пропорции здесь не спорят с классическими канонами, а происхождение каждого материала остаётся понятным.</p>
+        <a class="story-link" href="https://t.me/alma_tessuti" target="_blank" rel="noreferrer">Alma Tessuti в Telegram <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="principles" aria-label="Принципы Alma Tessuti">
+      <article>
+        <span>01</span>
+        <h3>Натуральный состав</h3>
+        <p>Материал и его происхождение указаны открыто.</p>
+      </article>
+      <article>
+        <span>02</span>
+        <h3>Современная классика</h3>
+        <p>Выверенные пропорции без привязки к коротким трендам.</p>
+      </article>
+      <article>
+        <span>03</span>
+        <h3>Личный подбор</h3>
+        <p>Размер, сочетания и детали можно обсудить с менеджером.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#top">ALMA TESSUTI</a>
+    <p>Мужская одежда из натуральных тканей</p>
+    <div class="footer-links">
+      <a href="#catalog">Каталог</a>
+      <a href="#story">О проекте</a>
+      <a href="https://t.me/alma_tessuti" target="_blank" rel="noreferrer">Telegram</a>
+    </div>
+    <p class="demo-note">Демонстрационная витрина. Заказы и персональные данные не принимаются.</p>
+  </footer>
+
+  <dialog class="search-dialog" id="search-dialog">
+    <div class="dialog-topbar">
+      <label class="search-field">
+        <span class="sr-only">Поиск по каталогу</span>
+        <input id="search-input" type="search" placeholder="Название, материал или цвет" autocomplete="off">
+      </label>
+      <button class="icon-button" type="button" data-close="search-dialog" aria-label="Закрыть">×</button>
+    </div>
+    <div class="search-results" id="search-results"></div>
+  </dialog>
+
+  <dialog class="product-dialog" id="product-dialog">
+    <button class="icon-button dialog-close" type="button" data-close="product-dialog" aria-label="Закрыть">×</button>
+    <div id="product-detail"></div>
+  </dialog>
+
+  <dialog class="cart-dialog" id="cart-dialog">
+    <div class="cart-panel">
+      <div class="cart-header">
+        <div>
+          <p class="eyebrow">Ваш выбор</p>
+          <h2>Корзина</h2>
+        </div>
+        <button class="icon-button" type="button" data-close="cart-dialog" aria-label="Закрыть">×</button>
+      </div>
+      <div class="cart-items" id="cart-items"></div>
+      <div class="cart-summary" id="cart-summary"></div>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
