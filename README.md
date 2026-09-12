@@ -30,7 +30,7 @@ python3 -m http.server 8080
 
 ## Публикация
 
-Workflow `.github/workflows/pages.yml` публикует содержимое ветки `main` в GitHub Pages.
+Процесс `.github/workflows/pages.yml` публикует содержимое ветки `main` в GitHub Pages.
 
 ## О проекте
 
